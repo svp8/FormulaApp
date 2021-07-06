@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">FormulaApp</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="nav_settings">Настройки</string>
+    <string name="nav_rate">Оценить приложение</string>
+    <string name="nav_error">Написать автору</string>
+    <string name="nav_formula">Формулы</string>
+    <string name="nav_theory">Теория</string>
+    <string name="nav_practice">Практика</string>
+    <string name="nav_favorite">Избранное</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="ad_banner_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="ad_rewarded_id">ca-app-pub-3940256099942544/5224354917</string>
+    -------------------------------------------------------------------------------------
+
+    <string name="formula_content_1">Slideshow1</string>
+    <string name="formula_content_2">Формулы двойного угла</string>
+    <string name="formula_content_3">Slideshow3</string>
+    <string name="formula_content_4">Slideshow4</string>
+    <string name="formula_content_5">Slideshow5</string>
+    <string name="formula_content_6">Slideshow5</string>
+    <string name="formula_content_7">Slideshow5</string>
+
+    <string name="theory_content_1">Tshow10</string>
+    <string name="theory_content_2">Teshow20</string>
+    <string name="theory_content_3">TTeshow30</string>
+    <string name="theory_content_4">Tideshow40</string>
+
+
+    <string-array name="practice_content_array_1">
+        <item>Площадь треугольника, один из углов которого равен разности двух других, равна площади квадрата, сторона которого совпадает с одной из сторон этого треугольника.
+            \n\n Найти углы данного треугольника.</item>
+        <item>Practice2</item>
+        <item>Practice3</item>
+        <item>Practice4</item>
+        <item>Practice5</item>
+        <item>Practice6</item>
+    </string-array>
+
+    <string-array name="practice_content_array_2">
+        <item>Practice2</item>
+        <item>Площадь треугольника, один из углов которого равен разности двух других, равна площади квадрата, сторона которого совпадает с одной из сторон этого треугольника.
+            \n\n Найти углы данного треугольника.</item>
+        <item>Practice3</item>
+        <item>Practice4</item>
+        <item>Practice5</item>
+        <item>Practice6</item>
+    </string-array>
+    <string-array name="practice_dif_array">
+        <item>1</item>
+        <item>0</item>
+        <item>1</item>
+        <item>0</item>
+        <item>2</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="practice_ans_array">
+        <item>1</item>
+        <item>16</item>
+        <item>ok2</item>
+        <item>sin(11)</item>
+        <item>60</item>
+        <item>17</item>
+    </string-array>
+
+
+    -----------------------------------------------------------------
+    <string-array name="practice_array">
+        <item>Theme1</item>
+        <item>Theme2</item>
+        <item>Theme3</item>
+        <item>Theme4</item>
+        <item>Theme5</item>
+        <item>Theme6</item>
+    </string-array>
+    <string-array name="formula_array">
+        <item>Таблица углов</item>
+        <item>Основные тригонометрические тождества</item>
+        <item>Формулы двойного угла</item>
+        <item>Формулы тройного угла</item>
+        <item>Формулы понижения степени</item>
+        <item>Формулы суммы тригонометрических функций</item>
+        <item>Формулы разности тригонометрических функций</item>
+        <item>Формулы преобразования суммы в произведение</item>
+        <item>Формулы преобразования разности в произведение </item>
+        <item>Формулы произведения тригонометрических функций</item>
+        <item>Формулы приведения</item>
+
+
+    </string-array>
+
+    <string-array name="theory_array">
+        <item>Синус и косинуc. Тангенс и котангенс.</item>
+        <item>Знаки тригонометрических функций</item>
+        <item>theory3</item>
+        <item>theory4</item>
+
+    </string-array>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

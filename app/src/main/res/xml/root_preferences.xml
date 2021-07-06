@@ -1,0 +1,47 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF">
+
+    <PreferenceCategory
+        android:background="#FFFFFF"
+        app:iconSpaceReserved="false"
+        app:title="Данные">
+
+        <Preference
+            android:background="#DD4040"
+            android:key="login"
+
+            android:title="Сбросить весь прогресс"
+            app:iconSpaceReserved="false" />
+        <Preference
+            android:background="#DD4040"
+            android:key="fav"
+
+            android:title="Сбросить избранное"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:background="#FFFFFF"
+        app:iconSpaceReserved="false"
+        app:title="Общее">
+
+    <Preference
+
+        android:key="premium"
+        android:title="Отключить рекламу"
+        app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="О приложении"
+        >
+    <Preference
+
+        android:key="version"
+        android:title="Версия"
+        android:summary="1.0"
+        app:iconSpaceReserved="false" />
+
+</PreferenceCategory>
+</PreferenceScreen>
+

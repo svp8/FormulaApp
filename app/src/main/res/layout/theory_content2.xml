@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F4F4F3"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="138dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="136dp"
+                android:layout_marginRight="136dp"
+                android:layout_marginBottom="66dp"
+                android:background="@drawable/custom_btn"
+                android:onClick="onClickNext"
+                android:text="Продолжить"
+                android:layout_below="@id/textView5"
+                android:layout_centerHorizontal="true"
+                />
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/activity_main_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="593dp"
+                android:layout_below="@+id/textView3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/rounded_corner_page"
+                android:focusableInTouchMode="true">
+
+            </androidx.viewpager2.widget.ViewPager2>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="62dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="172dp"
+                android:layout_marginLeft="172dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_corner_page"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="16dp"
+                android:text="TextView"
+                android:textColor="#050505"
+                android:textSize="18sp"
+
+                />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="62dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:background="@drawable/rounded_corner_page"
+                android:focusableInTouchMode="true"
+                android:paddingLeft="16dp"
+                android:text="1/2"
+                android:layout_below="@id/activity_main_viewpager"
+                android:textColor="#050505"
+                android:textColorHighlight="#FDFAFA"
+                android:textSize="18sp"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="309dp"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/ad_banner_id"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
