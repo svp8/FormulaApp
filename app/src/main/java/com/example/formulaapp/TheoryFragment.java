@@ -31,7 +31,7 @@ import java.util.List;
 public class TheoryFragment extends Fragment {
 
     String theoryArr[], s2[];
-    int images[] = { R.color.design_default_color_primary,R.color.red,R.color.green,R.color.orange,R.color.yellow,R.color.purple,R.color.design_default_color_primary,R.color.design_default_color_on_secondary,R.color.red,R.color.green,R.color.orange,R.color.yellow,R.color.purple,R.color.design_default_color_primary};
+    int images[] = { R.color.design_default_color_primary,R.color.red,R.color.green,R.color.orange,R.color.yellow,R.color.purple,R.color.design_default_color_primary,R.color.design_default_color_on_secondary,R.color.red,R.color.green,R.color.orange,R.color.yellow,R.color.purple,R.color.design_default_color_primary,R.color.design_default_color_on_secondary,R.color.red,R.color.green,R.color.orange,R.color.yellow,R.color.purple};
     RecyclerView recyclerView;
      MyAdapter myAdapter;
      private List<String> favStatusList=new ArrayList<>();

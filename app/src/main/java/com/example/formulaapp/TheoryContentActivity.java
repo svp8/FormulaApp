@@ -2,8 +2,10 @@ package com.example.formulaapp;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
@@ -44,13 +46,13 @@ public class TheoryContentActivity extends AppCompatActivity {
     private TextView text_content;
     private TextView text_content2;
 
-    private String[] array_theory ;
+    private String[] array_theory;
 
     private ActionBar actionBar;
     private PageAdapter pAdapter;
     private int pos;
     private int min = 1;
-    private int max = 2;
+    private int max = 3;
     private int random;
     private ArrayList<itemPage> arrayList;
     private Button button;
@@ -62,7 +64,7 @@ public class TheoryContentActivity extends AppCompatActivity {
             case android.R.id.home:
                 random = (int) (Math.random() * ((max - min) + 1)) + min;
                 Log.i("lols", "r" + random);
-                if (mInterstitialAd != null && random==2) {
+                if (mInterstitialAd != null && random == 2) {
                     mInterstitialAd.show(TheoryContentActivity.this);
 
                 }
@@ -141,21 +143,27 @@ public class TheoryContentActivity extends AppCompatActivity {
 
     private void changeContent() {
         array_theory = getResources().getStringArray(R.array.theory_array);
-        switch (position) {
-            case 0:
-                arrayList = new ArrayList<>();
-                arrayList.add(new itemPage(R.drawable.theory_1_1));
-                arrayList.add(new itemPage(R.drawable.theory_1_2));
-                actionBar.setTitle(array_theory[position]);
-                configureViewPager();
-                break;
-            case 1:
-                arrayList = new ArrayList<>();
-                arrayList.add(new itemPage(R.drawable.theory_2_1));
-                arrayList.add(new itemPage(R.drawable.theory_2_2));
-                actionBar.setTitle(array_theory[position]);
-                configureViewPager();
-                break;
+        boolean fileFound = true;
+        arrayList = new ArrayList<>();
+        String imageName = "theory_";
+        pos = position + 1;
+        findImage(pos);
+        configureViewPager();
+        actionBar.setTitle(array_theory[position]);
+    }
+
+    public void findImage(int pos) {
+        String imageName = "theory_";
+        for (int i = 1; i < 4; i++) {
+            imageName = "theory_" + pos + "_";
+            imageName += i;
+            int imageId = this.getResources().getIdentifier(imageName, "drawable", this.getPackageName());
+
+            if (imageId != 0) {
+                Log.i("test321", " " + imageId);
+                arrayList.add(new itemPage(imageId));
+            }
+
         }
     }
 
@@ -182,7 +190,7 @@ public class TheoryContentActivity extends AppCompatActivity {
 
     public void onClickNext(View view) {
         random = (int) (Math.random() * ((max - min) + 1)) + min;
-        if (mInterstitialAd != null &&random==1) {
+        if (mInterstitialAd != null && random == 1) {
             mInterstitialAd.show(TheoryContentActivity.this);
 
         } else {

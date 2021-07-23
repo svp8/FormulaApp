@@ -60,7 +60,7 @@ public class FavouritesFragment extends Fragment {
         for (int position = 0; position < 10; position++) {
             if (mPrefs.contains("ID3 " + position)) {
 
-                favList.add(new ItemCont(images[position], mPrefs.getString("IDText " + position, "default"), String.valueOf(position), mPrefs.getString("ID3 " + position, "0"), 0));
+                favList.add(new ItemCont(images[position%10], mPrefs.getString("IDText " + position, "default"), String.valueOf(position), mPrefs.getString("ID3 " + position, "0"), 0));
             }
         }
         recyclerView = view.findViewById(R.id.recView);
